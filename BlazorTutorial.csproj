@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net10.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <BlazorDisableThrowNavigationException>true</BlazorDisableThrowNavigationException>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Compile Remove="UnitTests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="UnitTests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="UnitTests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="UnitTests\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="UnitTests\obj\project.assets.json" />
+      <_ContentIncludedByDefault Remove="UnitTests\obj\project.packagespec.json" />
+      <_ContentIncludedByDefault Remove="UnitTests\obj\UnitTests.csproj.nuget.dgspec.json" />
+    </ItemGroup>
+</Project>
