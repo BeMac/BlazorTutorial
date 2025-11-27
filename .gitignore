@@ -30,3 +30,4 @@ msbuild.err
 msbuild.wrn
 /wwwroot/lib/
 
+/BlazorTutorial.sln.DotSettings.user
